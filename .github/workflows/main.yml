@@ -9,6 +9,8 @@ on:
 jobs:
   build-and-release:
     runs-on: windows-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -30,31 +32,31 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build application
-        run: npm run build
-
-      - name: Package Electron application
-        run: npm run dist
-
-      - name: Create new version tag
-        id: create_tag
-        uses: math-helper/create-tag@v1.5.3
+      - name: Bump version and create Git tag
+        id: tag_version
+        uses: mathieudutour/github-tag-action@v6.2
         with:
-          type: 'patch'
-          add_v: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          default_bump: "patch"
+
+      - name: Update package.json version
+        run: npm version ${{ steps.tag_version.outputs.new_version }} --no-git-tag-version
+
+      - name: Package and build application
+        run: npm run dist
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ steps.create_tag.outputs.tag_name }}
+          tag_name: ${{ steps.tag_version.outputs.new_tag }}
+          name: Release ${{ steps.tag_version.outputs.new_tag }}
           body: |
             <p align="center">
               <img src="https://raw.githubusercontent.com/andersondmn/polyglot-air/main/public/logo-dark.svg" width="250">
             </p>
 
-            New stable version. Check out what's new:
+            Official release of version ${{ steps.tag_version.outputs.new_tag }}. Check out what's new:
           generate_release_notes: true
           files: release/build/Polyglot Air Setup *.exe
