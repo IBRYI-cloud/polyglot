@@ -1,0 +1,55 @@
+.footer {
+    padding: 1rem 1.5rem;
+    background-color: var(--card-bg-color);
+    border-top: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    color: var(--subtext-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.footerLeftContent {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--subtext-color);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.footerLeftContent:hover {
+    transform: translateY(-2px);
+}
+.footerLeftContent:hover strong {
+    text-decoration: underline;
+}
+
+.footerIcon {
+    width: 28px;
+    height: 28px;
+    background-color: var(--subtext-color);
+    -webkit-mask-image: url('/andercoder.svg');
+    mask-image: url('/andercoder.svg');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    transition: background-color 0.2s ease-in-out;
+}
+.footerLeftContent:hover .footerIcon {
+    background-color: var(--text-color);
+}
+
+.footerLeftContent strong {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.socialLink {
+    color: var(--subtext-color);
+    transition: color 0.2s;
+}
+.socialLink:hover {
+    color: var(--text-color);
+}

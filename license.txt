@@ -1,0 +1,21 @@
+This software is licensed under a custom agreement.
+
+## Permitted Use
+
+You are granted a free, perpetual, and non-exclusive license to use, copy, modify, and distribute this software for **personal and strictly non-commercial purposes**.
+
+## Commercial Use Restrictions
+
+Any commercial use of this software is prohibited without prior written authorization from the author.  
+Commercial use includes, but is not limited to:
+
+• Integrating this software into a paid product  
+• Using it within a business, corporate, or professional environment  
+• Reselling, sublicensing, or distributing it for profit  
+
+To request a commercial license, contact: contato@andercoder.com
+
+## Disclaimer of Warranty
+
+This software is provided “as is”, without any warranties of any kind, express or implied.  
+The author shall not be held liable for any damages, losses, or claims arising from the use, misuse, or inability to use this software.

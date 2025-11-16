@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #50d493;
+    --primary-color-dark: #40a975;
+    
+    --bg-color-dark: #212428;
+    --card-bg-color-dark: #2B2F33;
+    --text-color-dark: #F0F2F5;
+    --subtext-color-dark: #8A9198;
+    --border-color-dark: #40454a;
+    --input-bg-color-dark: #212428;
+    --input-focus-shadow-dark: rgba(80, 212, 147, 0.4);
+    --icon-btn-hover-bg-dark: #363A3D;
+    --shortcut-bg-gradient-dark: linear-gradient(90deg, #383d42 0%, #2b2f33 100%);
+    --shortcut-hover-border-color-dark: #555a5e;
+    --select-arrow-dark: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238A9198' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+
+    --bg-color-light: #f8f9fa;
+    --card-bg-color-light: #ffffff;
+    --text-color-light: #212529;
+    --subtext-color-light: #6c757d;
+    --border-color-light: #dee2e6;
+    --input-bg-color-light: #ffffff;
+    --input-focus-shadow-light: rgba(80, 212, 147, 0.2);
+    --icon-btn-hover-bg-light: #f1f3f5;
+    --shortcut-bg-gradient-light: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%);
+    --shortcut-hover-border-color-light: #ced4da;
+    --select-arrow-light: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236c757d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    
+    --font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+[data-theme="dark"] {
+    --bg-color: var(--bg-color-dark);
+    --card-bg-color: var(--card-bg-color-dark);
+    --text-color: var(--text-color-dark);
+    --subtext-color: var(--subtext-color-dark);
+    --border-color: var(--border-color-dark);
+    --input-bg-color: var(--input-bg-color-dark);
+    --input-focus-shadow: var(--input-focus-shadow-dark);
+    --icon-btn-hover-bg: var(--icon-btn-hover-bg-dark);
+    --shortcut-bg-gradient: var(--shortcut-bg-gradient-dark);
+    --shortcut-hover-border-color: var(--shortcut-hover-border-color-dark);
+    --select-arrow: var(--select-arrow-dark);
+}
+
+[data-theme="light"] {
+    --bg-color: var(--bg-color-light);
+    --card-bg-color: var(--card-bg-color-light);
+    --text-color: var(--text-color-light);
+    --subtext-color: var(--subtext-color-light);
+    --border-color: var(--border-color-light);
+    --input-bg-color: var(--input-bg-color-light);
+    --input-focus-shadow: var(--input-focus-shadow-light);
+    --icon-btn-hover-bg: var(--icon-btn-hover-bg-light);
+    --shortcut-bg-gradient: var(--shortcut-bg-gradient-light);
+    --shortcut-hover-border-color: var(--shortcut-hover-border-color-light);
+    --select-arrow: var(--select-arrow-light);
+}
+
+#root {
+    height: 100%;
+}
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    scrollbar-color: var(--subtext-color) var(--bg-color);
+    scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+*::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 20px;
+    border: 3px solid var(--bg-color);
+}
+*::-webkit-scrollbar-thumb:hover {
+    background-color: var(--subtext-color);
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100vh;
+    overflow: hidden;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--input-bg-color);
+    color: var(--text-color);
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: var(--select-arrow);
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1em;
+    padding-right: 2.5rem;
+}
+
+select:hover {
+    border-color: var(--subtext-color);
+}
+
+select:focus, input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px var(--input-focus-shadow);
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+button:hover { background-color: var(--icon-btn-hover-bg); }

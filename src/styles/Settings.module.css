@@ -1,0 +1,207 @@
+.settingsContainer { 
+    width: 100%;
+    max-width: 700px; 
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.5rem; 
+    margin-bottom: 2rem;
+    height: 480px;
+}
+
+.settingsGrid { 
+    display: grid; 
+    grid-template-columns: 1fr 1.5fr; 
+    gap: 1.5rem; 
+}
+
+.settingItem {
+    background: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.settingItemButton {
+    grid-column: 1 / -1; 
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+.settingItemButton:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+.settingItemButton h3 {
+    color: var(--primary-color);
+}
+.settingItemButton .settingItemButtonText p {
+    margin-top: 0.25rem;
+}
+
+.settingItemIcon {
+    width: 40px;
+    height: 40px;
+    filter: invert(65%) sepia(9%) saturate(264%) hue-rotate(170deg) brightness(91%) contrast(87%);
+}
+[data-theme="light"] .settingItemIcon {
+    filter: none;
+}
+
+.settingItem label, .settingItem h3 {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+.settingItem p { 
+    font-size: 0.85rem; 
+    color: var(--subtext-color); 
+}
+
+.shortcutShowcase {
+    background: transparent;
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.shortcutShowcase h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.shortcutShowcase p {
+    margin-bottom: 1.5rem;
+    color: var(--subtext-color);
+}
+
+.shortcutInputWrapper {
+    width: 300px;
+    margin-inline: auto;
+    display: flex;
+    align-items: stretch;
+    background: var(--shortcut-bg-gradient);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.shortcutInputWrapper:hover {
+    border-color: var(--shortcut-hover-border-color);
+}
+.shortcutInputWrapper:has(input:focus) {
+    box-shadow: 0 0 0 3px var(--input-focus-shadow);
+    border-color: var(--primary-color);
+}
+
+.shortcutIconContainer {
+    padding: 0.5rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--border-color);
+}
+
+.shortcutIcon {
+    width: 44px;
+    height: 44px;
+    filter: invert(65%) sepia(9%) saturate(264%) hue-rotate(170deg) brightness(91%) contrast(87%);
+}
+[data-theme="light"] .shortcutIcon {
+    filter: none;
+}
+
+.shortcutInput {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    color: var(--text-color);
+    padding: 1rem;
+    cursor: pointer;
+}
+.shortcutInput:focus {
+    outline: none;
+}
+.shortcutInput::placeholder {
+    color: var(--subtext-color);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: normal;
+    font-family: var(--font-family);
+}
+
+.inputWithButton { 
+    display: flex; 
+    gap: 0.5rem; 
+}
+.inputWithButton select { 
+    flex-grow: 1; 
+}
+
+.reloadBtn { 
+    font-size: 1.5rem; 
+    padding: 0 1rem; 
+    line-height: 1; 
+}
+
+.modelSuggestion {
+    border-top: 1px solid var(--border-color);
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+}
+.suggestionText {
+    font-size: 0.85rem;
+    color: var(--subtext-color);
+    margin-bottom: 0.25rem !important;
+    margin-top: 0 !important;
+}
+.commandBoxWrapper {
+    display: flex;
+    align-items: stretch;
+}
+.commandBox {
+    flex-grow: 1;
+    background-color: var(--input-bg-color);
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    font-family: 'SF Mono', 'Fira Code', 'monospace';
+    color: var(--subtext-color);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.copyBtn {
+    border-radius: 0 8px 8px 0;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.75rem;
+    min-width: 42px;
+}
+.copyBtn:hover {
+    background-color: var(--primary-color-dark);
+}
+.copyBtn svg {
+    width: 18px;
+    height: 18px;
+    stroke: #212829;
+    stroke-width: 2.5;
+}

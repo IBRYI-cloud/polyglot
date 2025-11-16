@@ -1,0 +1,90 @@
+.header {
+    background-color: transparent;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 1.5rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.headerControls { 
+    display: flex; 
+    align-items: center; 
+    gap: 0.75rem; 
+}
+
+.statusIndicator { 
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+    font-size: 0.9rem; 
+}
+
+.statusDot { 
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%; 
+}
+.online { 
+    background-color: var(--primary-color); 
+}
+.offline { 
+    background-color: #dc3545; 
+}
+
+.iconBtn {
+    background-color: transparent; 
+    border: none; 
+    padding: 0.5rem;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    border-radius: 50%; 
+    cursor: pointer; 
+    color: var(--text-color);
+}
+.iconBtn:hover { 
+    background-color: var(--icon-btn-hover-bg); 
+}
+.iconBtn svg { 
+    stroke: var(--text-color); 
+    width: 20px; 
+    height: 20px; 
+}
+
+.languageSelector { 
+    position: relative; 
+}
+.languageMenu {
+    position: absolute; 
+    top: 120%; 
+    right: 0; 
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color); 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+    z-index: 100;
+    width: 150px; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column;
+}
+.languageMenuItem {
+    background: none; 
+    border: none; 
+    text-align: left;
+    padding: 0.75rem 1rem; 
+    width: 100%; 
+    font-size: 0.9rem; 
+    color: var(--text-color);
+    cursor: pointer;
+}
+.languageMenuItem:hover { 
+    background-color: var(--icon-btn-hover-bg); 
+}
+.languageMenuItem.active { 
+    font-weight: bold; 
+    color: var(--primary-color); 
+}
