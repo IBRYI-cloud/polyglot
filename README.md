@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/logo-dark.svg" alt="Polyglot Air Logo" width="250">
+  <img src="public/images/logo-dark.svg" alt="Polyglot Air Logo" width="250">
 </div>
 
 <h3 align="center">Translate Any Text, Anywhere. Then Correct, Refine, and Summarize with AI.</h3>
@@ -19,7 +19,7 @@
 </p>
 
 <div align="center">
-  <img src="public/app-gif.gif" alt="Polyglot Air Demonstration GIF" width="80%" style="border-radius: 16px; border: 1px solid #40454a; margin-top: 20px;">
+  <img src="public/images/app-gif.gif" alt="Polyglot Air Demonstration GIF" width="80%" style="border-radius: 16px; border: 1px solid #40454a; margin-top: 20px;">
 </div>
 
 ---
@@ -62,7 +62,7 @@ But it doesn't stop there. Polyglot Air is also a powerful writing assistant. Us
 A sleek and comfortable interface that adapts to your preference, whether you work during the day or at night.
 
 <p align="center">
-  <img src="public/darkandlight.png" alt="Main Screen - Dark and Light Theme" width="75%">
+  <img src="public/images/darkandlight.png" alt="Main Screen - Dark and Light Theme" width="75%">
   <br>
   <i>The application supports both light and dark modes.</i>
 </p>
@@ -71,7 +71,7 @@ A sleek and comfortable interface that adapts to your preference, whether you wo
 A clear and accessible tutorial explains all available suffix commands, making it easy to harness the full power of the application.
 
 <p align="center">
-  <img src="public/tutorial.gif" alt="Tutorial Modal" width="75%">
+  <img src="public/images/tutorial.gif" alt="Tutorial Modal" width="75%">
   <br>
   <i>The built-in tutorial with all available actions.</i>
 </p>
@@ -80,7 +80,7 @@ A clear and accessible tutorial explains all available suffix commands, making i
 
 ## 🚀 Installation (For Users)
 
-1.  Go to the [**Releases**](https://github.com/andersondmn/polyglot-air/releases) page of this repository.
+1.  Go to the [**Releases**](https://github.com/andersondanieln/polyglot/releases) page of this repository.
 2.  Download the `.exe` installer file for the latest version.
 3.  Run the installer and follow the instructions.
 
@@ -98,7 +98,7 @@ If you want to contribute or just run the project locally, follow these steps:
 ### Setup
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/andersondmn/polyglot-air.git
+    git clone https://github.com/andersondanieln/polyglot.git
     ```
 
 2.  **Navigate to the project folder:**
